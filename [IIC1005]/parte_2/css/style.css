@@ -1,0 +1,156 @@
+@font-face { font-family: GravTrac; src: url('./../fonts/gravtrac.ttf'); } 
+@font-face { font-family: Zen Dots; src: url('./../fonts/zendots.ttf'); } 
+@font-face { font-family: Montserrat; src: url('./../fonts/montserrat.ttf'); } 
+
+.flex-container{
+    display: flex;
+   }
+
+body{
+    background-color: #b0b0b0;
+    margin: 3%;
+    background-size: contain;
+}
+
+
+.encabezado {
+    background-color: #17DD9B;
+    min-height: 50px;
+    max-height: 100px;
+    width: 100%;
+    font-family: "Zen Dots";
+    font-size: 30px;
+    color: #000000;
+    align-items: center; 
+    justify-content: center;
+}
+.titulo_histograma{
+    margin-left: 40px;
+}
+.titulo_densidad{
+    margin-left: 40px;
+}
+
+.botoneshistograma {
+    margin-top: 20px;
+    border-radius: 7px;
+    height: 45px;
+    width: auto;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(44, 155, 219, 0.781);
+}
+
+
+.titulos_graficos{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.titulo_histograma{
+    align-items: center; 
+    justify-content: center;
+
+}
+
+
+.container_1{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.imagen_inicial_h{
+    margin-right: 15px;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+.imagen_inicial_d{
+    margin-left: 15px;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+.imagenes_histogramas{
+    height: 400px;
+    width: 500px;
+}
+
+
+
+
+.lista_parte3-4{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+
+}
+.lista_parte3{
+    margin-right: 80px;
+}
+
+.lista_parte4{
+    margin-left: 80px;
+}
+
+
+.lista{
+    border-radius: 10px;
+    background-color: #ffffff85;
+    height: 40px;
+
+}
+
+img {
+    background-color: #ffffff; 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.contenedor_foto {
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor_foto1 {
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor_foto2 {
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-family:"Montserrat" ;
+    font-size: large;
+}
+
+.boton_dark{
+    border-radius: 7px;
+    height: 45px;
+    width: auto;
+    font-size: 15px;
+    font-family: GravTrac;
+    background-color: black;
+    color: white;
+}
+.contenedor_boton_dark{
+    margin-top: 100px;
+    margin-right: 20px;
+    justify-content: flex-end;
+}

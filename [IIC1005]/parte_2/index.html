@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarea Grande 1 – IIC1005</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    
+    <!--Encabezado de la página-->
+    <div class="flex-container encabezado" id="encabezado">
+        <div class="flex-child">
+            <h1>EPIC ANALYSIS OF ANIMES</h1>
+        </div>
+    </div>
+    
+    <!--Cuerpo de la pagina-->
+    <div class="flex-container container_1">
+        <div class="flex-child grafico_boton_histograma">
+            <div class="flex-child titulo_histograma" style="align-items: center; justify-content: center;">
+                <p style="text-decoration:underline;">Typical distribution of anime average scores</p>
+            </div>
+        <img alt="Typical distribution of anime average scores" src="./img/Pregunta1_1.png" class="imagen_inicial_h"></img>
+            <div style="align-items: center; justify-content: center;" class="flex-container">
+                <button onclick="botonhistograma()" class="botoneshistograma">Histogram by series type</button>
+            </div>
+        </div>
+        <div class="flex-child grafico_boton_histograma" style="align-items: center; justify-content: center;">
+            <div class="flex-child titulo_densidad">
+                <p style="text-decoration:underline;">Typical density distribution of anime mean scores</p>
+            </div>
+        <img alt="Typical density distribution of anime mean scores" src="./img/Pregunta1_2.png" class="imagen_inicial_d"></img>
+            <div  style="align-items: center; justify-content: center;" class="flex-container">
+            <button onclick="botondensidad()" class="botoneshistograma">Density by series type</button>
+            </div>
+        </div>
+    </div>
+
+<!--Imágenes al apretar el boton...-->
+    <div id="Histogramas" class="flex-child centrado" style="display:none">
+        <div class="flex-container contenedor_foto1" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical distribution of anime average scores by Type</p>
+            <img alt="Typical distribution of anime average scores by Type" src="./img/Pregunta2_all1.png" class="imagenes_histogramas"></img>            
+        </div>
+        <div class="flex-container contenedor_foto1" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical distribution of TV type anime average scores</p>
+            <img alt="Typical distribution of TV type anime average scores" src="./img/Pregunta2_tv1.png" class="imagenes_histogramas"></img>                  
+        </div>
+        <div class="flex-container contenedor_foto1" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical distribution of Movie type anime average scores</p>
+            <img alt="Typical distribution of Movie type anime average scores" src="./img/Pregunta2_movie1.png" class="imagenes_histogramas"></img>
+        </div>
+        <div class="flex-container contenedor_foto1" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical distribution of Music type anime average scores</p>
+            <img alt="Typical distribution of Music type anime average scores" src="./img/Pregunta2_music1.png" class="imagenes_histogramas"></img>
+        </div>
+        <div class="flex-container contenedor_foto1" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical distribution of ONA type anime average scores</p>
+            <img alt="Typical distribution of ONA type anime average scores" src="./img/Pregunta2_ona1.png" class="imagenes_histogramas"></img>
+        </div>
+        <div class="flex-container contenedor_foto1" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical distribution of OVA type anime average scores</p>
+            <img alt="Typical distribution of OVA type anime average scores" src="./img/Pregunta2_ova1.png" class="imagenes_histogramas"></img>
+        </div>
+        <div class="flex-container contenedor_foto1" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical distribution of Special type anime average scores</p>
+            <img alt="Typical distribution of Special type anime average scores" src="./img/Pregunta2_special1.png" class="imagenes_histogramas"></img>
+        </div>
+        <!--<script>ScrollReveal().reveal('.contenedor_foto',{delay: 500});</script>-->
+    </div>
+
+    <!--Imagenes densidad al apretar boton-->
+    <div id="Densidad" class="flex-child" style="display:none">
+        <div class="flex-container  contenedor_foto2" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical density distribution of anime mean scores by Type</p>
+            <img alt="Typical density distribution of anime mean scores by Type" src="./img/Pregunta2_all2.png" class="imagenes_histogramas"></img>
+        </div>
+        <div class="flex-container contenedor_foto1" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical density distribution of TV type anime average scores</p>
+            <img alt="Typical density distribution of TV type anime average scores" src="./img/Pregunta2_tv2.png" class="imagenes_histogramas"></img>
+        </div>
+        <div class="flex-container contenedor_foto2" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical density distribution of Movie type anime average scores</p>
+            <img alt="Typical density distribution of Movie type anime average scores" src="./img/Pregunta2_movie2.png" class="imagenes_histogramas"></img>
+        </div>
+        <div class="flex-container contenedor_foto2" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical density distribution of Music type anime average scores</p>
+            <img alt="Typical density distribution of Music type anime average scores" src="./img/Pregunta2_music2.png" class="imagenes_histogramas"></img> 
+        </div>
+        <div class="flex-container contenedor_foto2" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical density distribution of ONA type anime average scores</p>
+            <img alt="Typical density distribution of ONA type anime average scores" src="./img/Pregunta2_ona2.png" class="imagenes_histogramas"></img>
+        </div>
+        <div class="flex-container contenedor_foto2" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical density distribution of OVA type anime average scores</p>
+            <img alt="Typical density distribution of OVA type anime average scores" src="./img/Pregunta2_ova2.png" class="imagenes_histogramas"></img>
+        </div>
+        <div class="flex-container contenedor_foto2" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Typical density distribution of Special type anime average scores</p>
+            <img alt="Typical density distribution of Special type anime average scores" src="./img/Pregunta2_special2.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+
+<!--Gráficos parte 3 y 4-->
+    <div class="flex-container lista_parte3-4">
+        <div class="flex-child lista_parte3">
+            <select id="graficos_3" onchange="lista1(this)" class="lista">
+                <option value="">Behavior and distributions of the people on the 5 best anime</option>
+                <option value="Shingeki">Distributions of: Shingeki no Kyojin</option>
+                <option value="Steins">Distributions of: Steins;Gate</option>
+                <option value="Gintama">Distributions of: Gintama</option>
+                <option value="Fullmetal">Distributions of: Fullmetal Alchemist: Brotherhood</option>
+                <option value="Hunter">Distributions of: Hunter x Hunter (2011)</option>
+                <option value="Watching">Watching Top 5 anime</option>
+                <option value="Completed">Completed Top 5 anime</option>
+                <option value="Plan to Watch">Plan to Watch Top 5 anime</option>
+            </select>
+
+        </div>
+        <div class="flex-child lista_parte4">
+            <select id="graficos_4" onchange="lista2(this)" class="lista">
+                <option value="">Behavior of scores and number of interactions since 2000</option>
+                <option value="Score">Score: means by year</option>
+                <option value="Watching">Watching: means by year</option>
+                <option value="Completed">Completed: means by year</option>
+                <option value="Plan to Watch">Plan to Watch: means by year</option>
+            </select>
+        </div>
+    </div>
+
+<!--Aparición gráficos parte 3-->
+    <div id="grafico1_3" class="flex-child" style="display:none;">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Distribution of anime viewers - Top 5 in Watching</p>
+            <img alt="Distribution of anime viewers - Top 5 in Watching" src="./img/Pregunta3_watch.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="grafico2_3" class="flex-child" style="display:none">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Distribution of anime viewers - Top 5 in Completed</p>
+            <img alt="Distribution of anime viewers - Top 5 in Completed" src="./img/Pregunta3_comp.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="grafico3_3" class="flex-child" style="display:none">
+        <div class="flex-container  contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Distribution of anime viewers - Top 5 in Plan to Watch</p>
+            <img alt="Distribution of anime viewers - Top 5 in Plan to Watch" src="./img/Pregunta3_ptw.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="graficoShingeki" class="flex-child" style="display:none">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Distribution of anime viewers - Shingeki no Kyojin</p>
+            <img alt="Distribution of anime viewers - Shingeki no Kyojin" src="./img/Pregunta3_Shingeki.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="graficoSteins" class="flex-child" style="display:none">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Distribution of anime viewers - Steins;Gate</p>
+            <img alt="Distribution of anime viewers - Steins;Gate" src="./img/Pregunta3_Steins.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="graficoGintama" class="flex-child" style="display:none">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Distribution of anime viewers - Gintama</p>
+            <img alt="Distribution of anime viewers - Gintama" src="./img/Pregunta3_Gintama.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="graficoFullmetal" class="flex-child" style="display:none">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Distribution of anime viewers - Fullmetal Alchemist: Brotherhood</p>
+            <img alt="Distribution of anime viewers - Fullmetal Alchemist: Brotherhood" src="./img/Pregunta3_Fullmetal.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="graficoHunter" class="flex-child" style="display:none">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Distribution of anime viewers - Hunter x Hunter (2011)</p>
+            <img alt="Distribution of anime viewers - Hunter x Hunter (2011)" src="./img/Pregunta3_Hunter.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+
+
+<!--Aparición gráficos parte 4-->
+    <div id="grafico1_4" class="flex-child" style="display:none">
+        <div class="flex-container  contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Score behaviour since 2000</p>
+            <img alt="Score behaviour since 2000" src="./img/Pregunta4_score.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="grafico2_4" class="flex-child" style="display:none">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Watch behaviour since 2000</p>
+            <img alt="Watch behaviour since 2000" src="./img/Pregunta4_watch.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="grafico3_4" class="flex-child" style="display:none">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;">
+            <p style="text-decoration:underline;">Completed behaviour since 2000</p>
+            <img alt="Completed behaviour since 2000" src="./img/Pregunta4_comp.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div id="grafico4_4" class="flex-child" style="display:none">
+        <div class="flex-container contenedor_foto" style="flex-direction:column;" >
+            <p style="text-decoration:underline;">Plan to Watch behaviour since 2000</p>
+            <img alt="Plan to Watch behaviour since 2000" src="./img/Pregunta4_ptw.png" class="imagenes_histogramas"></img>
+        </div>
+    </div>
+    <div class="flex-container contenedor_boton_dark">
+        <button id="botondark" onclick="botondark()" class="boton_dark">Fullmetal Alchemist: Brotherhood Mode</button>
+
+
+    </div>
+
+    
+    <!--
+        ~Referencias~
+        Libreria flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+        W3Schools (usada como referencia para HTML, CSS y JavaScript en general): https://www.w3schools.com/
+        GitHub - jlmakes/scrollreveal: https://github.com/jlmakes/scrollreveal
+        ScrollReveal - Sitio Web oficial con guia y API Reference: https://scrollrevealjs.org/
+    -->
+        
+
+
+    <!--<script src="./js/scroll.js"></script>-->
+</body>
+</html>
