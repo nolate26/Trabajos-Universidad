@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResumenNivel</class>
+ <widget class="QWidget" name="ResumenNivel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Resumen del Nivel</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(116, 206, 255);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>571</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gill Sans Ultra Bold Condensed</family>
+     <pointsize>27</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;RESUMEN DEL NIVEL&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nombre5">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>380</y>
+     <width>441</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 255, 127);
+background-color: rgb(180, 60, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;No puedes seguir jugando :(&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>559</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="boton_volver_3">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="text">
+       <string>Ir a la Tienda</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="boton_nivel">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(209, 209, 209);</string>
+      </property>
+      <property name="text">
+       <string>Siguiente nivel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="boton_salir">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Salir</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>551</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="nombre1">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nivel actual:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="nombre2">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Puntaje total:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="nombre3">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Puntaje obtenido en el nivel:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="nombre4">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Vidas restantes:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Total de monedas</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="nivel">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="puntaje_total">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="puntaje_ronda">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="vidas">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="monedas">
+        <property name="font">
+         <font>
+          <family>OCR A Extended</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

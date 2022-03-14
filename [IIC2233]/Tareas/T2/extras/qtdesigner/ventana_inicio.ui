@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Menu de Inicio</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(116, 206, 255);</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit_ususario">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>390</y>
+     <width>460</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_iniciar">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>450</y>
+     <width>230</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Iniciar partida</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="boton_ranking">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>500</y>
+     <width>230</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Ver ranking</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>340</y>
+     <width>471</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>OCR A Extended</family>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MV Boli'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="text">
+    <string>Escribe tu nombre de usuario:</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>70</y>
+     <width>341</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../sprites/Logo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>lineEdit_ususario</zorder>
+  <zorder>label</zorder>
+  <zorder>logo</zorder>
+  <zorder>boton_iniciar</zorder>
+  <zorder>boton_ranking</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

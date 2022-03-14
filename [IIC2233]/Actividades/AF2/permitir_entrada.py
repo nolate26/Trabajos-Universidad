@@ -1,0 +1,22 @@
+from excepciones_covid import RiesgoCovid
+
+# NO DEBES MODIFICAR ESTA FUNCIÓN
+def verificar_sintomas(invitade):
+    if invitade.temperatura > 37.5:
+        raise RiesgoCovid("fiebre", invitade.nombre)
+    elif invitade.tos:
+        raise RiesgoCovid("tos", invitade.nombre)
+    elif invitade.dolor_cabeza:
+        raise RiesgoCovid("dolor_cabeza", invitade.nombre)
+
+
+def entregar_invitados(diccionario_invitades):#nombre:objeto
+    lista_invitados = []
+    for persona in diccionario_invitades:
+        try:
+            verificar_sintomas(diccionario_invitades[persona])
+        except RiesgoCovid as error:
+            print(error.alerta_de_covid())
+        else:
+            lista_invitados.append(persona)
+    return lista_invitados

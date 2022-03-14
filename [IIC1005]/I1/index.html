@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I1 IIC1005</title>
+    </head>
+    <body>
+        <script>
+            var texto_modificado =false;
+            function escribir_en_log(){
+
+                console.log("Hola, el comando funciona, me voy a sacar un 7");
+                var link1 = document.getElementById("link1");
+
+                if (texto_modificado == false) {
+                    link1.textContent = "texto de link modificado";
+                    texto_modificado= true
+                
+                }else if(texto_modificado==true){
+                    link1.textContent=("hacerclick");
+                    texto_modificado = false
+                }
+            }
+        </script>
+        <a id="link1" href='#' onmouseover="escribir_en_log()">hacer click</a>
+    </body>
+</html>
