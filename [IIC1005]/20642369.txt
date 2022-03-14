@@ -1,0 +1,76 @@
+name: Máquina de Nicolás Olate
+init: qinicio
+accept: qfinal
+
+//Establecemos los estados iniciales,
+//Reescribimos en la cinta 2 el primer número
+qinicio, 0, _
+qinicio, 0, 0, >,>
+
+qinicio, 1, _
+qinicio, 1, 1, >,>
+
+qinicio, #, _
+qresta, #, _, -,<
+
+//restar 1 a 1
+qresta, #,1
+qrenombrar, #,0,-,<
+
+//restar 1 a 0 que vuelve a ejecutar el proceso
+qresta,#,0
+qresta, #, 1, -,<
+
+//Tras la resta tipo 1 a 1 pasamos al estado qrenombrar para que siga 
+//escribiendo el numero restado
+qrenombrar, #, 0
+qrenombrar, #, 0, -,<
+
+qrenombrar, #, 1
+qrenombrar, #, 1, -,<
+
+//Al terminar de escribir el numero de la cinta 2 restado verificamos 
+//si esta correcto analizando la cinta 1 
+//Antes de realizarlo limpiamos los 0s que anteponen el número
+qrenombrar, #, _
+qarreglar1, #,_, >,-
+
+qarreglar1, 0,_
+qarreglar1, _, _, >,-
+
+qarreglar1, 1,_
+qarreglar2, 1,_,-,>
+
+qarreglar2, 1,0
+qarreglar2, 1,_, -,>
+
+//Ahora pasamos a verificar si es que es el número correcto
+qarreglar2, 1,1
+qverificar, 1,1,-,-
+
+qverificar, 1,1
+qverificar, 1,1,>,>
+
+qverificar, 0,0
+qverificar, 0,0,>,>
+
+//Al terminar de verificar seguimos con el proceso ya que esta correcta la resta
+//repetimos el proceso y restamos 1 en la cinta 2 nuevamente, así sucesivamente
+qverificar, #,_
+qresta, #,_,-,<
+
+//Si luego de verificar llego al fin de la cinta 1 es que efectivamente esta 
+//correcto y ejecutamos TRUE
+qverificar, _, _
+qfinal, _, _, -,-
+
+//Caso específico que el último número sea 0
+//ejemplo: 100#11#10#1#0
+qarreglar1, _,_
+qarreglar2, _,_, -,>
+
+qarreglar2, _,0
+qarreglar2, _,_, -,>
+
+qarreglar2, _,_
+qverificar, _,_, -,-
