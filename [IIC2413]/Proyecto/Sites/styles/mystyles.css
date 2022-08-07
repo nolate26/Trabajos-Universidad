@@ -1,0 +1,25 @@
+/* Este archivo no es necesario. Solo es para cambiar las propiedades de los objetos HTML
+Es mucho más fácil implementar una plantilla de Bootstrap que cambiar estas cosas a mano */
+
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 90%;
+    text-align: center;
+    font-size: 20px
+}
+
+th {
+    background-color: #2e789b;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
