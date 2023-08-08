@@ -1,0 +1,22 @@
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "extends": "airbnb-base/legacy",
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "ignorePatterns": "planificacion.js",
+    "rules": {
+        "linebreak-style": ["error", "windows"],
+        "no-console": "off",
+        "no-restricted-globals": "off",
+        "no-restricted-syntax": "off",
+        "eqeqeq": "off",
+        "object-curly-newline": "off",
+        "prefer-promise-reject-errors": "off"
+    }
+}
