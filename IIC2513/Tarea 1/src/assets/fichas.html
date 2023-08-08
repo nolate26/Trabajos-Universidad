@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Top players </title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./../imgs/logo.png" alt="logo" onclick="volver()">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./../../index.html">Volver</a></li>
+
+            </ul>
+
+        </nav>
+
+
+    </header>
+    <section>
+        <div class="contenedor_botones">
+            <div class="boton 1">
+                <button class="button-51" onclick="myFunction_1()">Número 1 <i class="fa fa-futbol-o"></i></button>
+            </div>
+            <div class="boton 2">
+                <button class="button-51" onclick="myFunction_2()">Número 2 <i class="fa fa-futbol-o"></i></button>
+            </div>
+            <div class="boton 3">
+                <button class="button-51" onclick="myFunction_3()">Número 3 <i class="fa fa-futbol-o"></i></button>
+            </div>
+            <div class="boton 4">
+                <button class="button-51" onclick="myFunction_4()">Número 4 <i class="fa fa-futbol-o"></i></button>
+            </div>
+            <div class="boton 5">
+                <button class="button-51" onclick="myFunction_5()">Número 5 <i class="fa fa-futbol-o"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <div id="fichas">
+        <div hidden id="1">
+            <h1 class="text-center">Cristiano Ronaldo</h1>
+
+
+            <div class="flex-container" id="container-images">
+                <div class="col-xs-4 col-centered">
+                    <img src="http://c3.thejournal.ie/media/2014/05/soccer-portuguese-premier-division-sporting-lisbon-v-benfica-310x415.jpg"
+                        class="img-responsive" alt="Cristiano Ronaldo at Sporting">
+                </div>
+                <div class="col-xs-4 col-centered">
+                    <img src="https://4.bp.blogspot.com/-Ek6eqrcL_hw/UlE2AUk2NeI/AAAAAAAAAeQ/qyMrx1qQm-U/s1600/Cristiano+Ronaldo+Manchester+United+v+Arsenal+bU2w2oxSKlzx.jpg"
+                        class="img-responsive" alt="Cristiano Ronaldo at Manchester United">
+                </div>
+                <div class="col-xs-4 col-centered">
+                    <img src="http://cdn.images.express.co.uk/img/dynamic/67/590x/secondary/Cristiano-Ronaldo-Real-Madrid-Manchester-United-1053467.jpg"
+                        class="img-responsive" alt="Cristiano Ronaldo at Real Madrid">
+                </div>
+            </div>
+
+            <div id="achievements">
+
+                <h2>Selected Achievements</h2>
+
+                <div class="flex-container_1">
+
+                    <div class="fila 1">
+                        <div class="parrafo">
+                            <h3>Club</h3>
+                            <h4><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png"
+                                    class="logos">Manchester United</h4>
+                            <ul>
+                                <li>Premier League: 3</li>
+                                <li>FA Cup: 1</li>
+                                <li>Champions League: 1</li>
+                                <li>FIFA Club World Cup: 1</li>
+                            </ul>
+                        </div>
+                        <div class="parrafo">
+                            <h4><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+                                    class="logos">Real Madrid</h4>
+                            <ul>
+                                <li>La Liga: 2</li>
+                                <li>Copa del Rey: 2</li>
+                                <li>UEFA Champions League: 3</li>
+                                <li>UEFA Super Cup: 2</li>
+                                <li>FIFA Club World Cup: 2</li>
+                            </ul>
+                        </div>
+                        <div class="parrafo">
+
+                            <h3>Individual <i class="fa fa-futbol-o"></i></h3>
+                            <ul>
+                                <li>Ballon d'Or: 5</li>
+                                <li>European Golden Shoe: 4</li>
+                                <li>UEFA Champions League top scorer: 6</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fila 1">
+                        <h3>Records</h3>
+                        <div class="parrafo">
+                            <h4><img src="https://openclipart.org/download/173813/earth.svg" class="logos">World
+                            </h4>
+                            <ul>
+                                <li>First footballer to reach 40 goals in a professional league for two consecutive
+                                    seasons</li>
+                                <li>First player to score in every minute of an official football game</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="parrafo">
+                            <h4><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+                                    class="logos">Real Madrid</h4>
+                            <ul>
+                                <li>Real Madrid all-time top goalscorer</li>
+                                <li>Fastest player to reach 300 official goals</li>
+                            </ul>
+                        </div>
+                        <div class="center">
+                            <img src="https://i.pinimg.com/originals/b5/86/3e/b5863e83868589986249a4379b9fd332.jpg"
+                                alt="Cristiano Ronaldo edit" id="ronaldo-custom-image">
+                            <em>
+                                <p>For more, go to:</p>
+                                <ul>
+                                    <li>Cristiano Ronaldo's <a href="http://www.cristianoronaldo.com">website</a>
+                                    </li>
+                                    <li>Cristiano Ronaldo's <a href="https://twitter.com/Cristiano">twitter</a></li>
+                                </ul>
+                            </em>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div hidden id="2">
+        <h1 class="text-center">Kaka</h1>
+
+
+        <div class="flex-container" id="container-images">
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/kaka1.avif" class="img-responsive" alt="Cristiano Ronaldo at Sporting">
+            </div>
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/kaka2.webp" class="img-responsive" alt="Cristiano Ronaldo at Manchester United">
+            </div>
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/kaka3.webp" class="img-responsive" alt="Cristiano Ronaldo at Real Madrid">
+            </div>
+        </div>
+
+        <div id="achievements">
+
+            <h2>Selected Achievements</h2>
+
+            <div class="flex-container_1">
+
+                <div class="fila 1">
+                    <div class="parrafo">
+                        <h3>Club</h3>
+                        <h4><img src="../imgs/milan.png" class="logos">AC Milan</h4>
+                        <ul>
+                            <li>Serie A: 1</li>
+                            <li>Italian Supercup: 1</li>
+                            <li>Champions League: 1</li>
+                            <li>FIFA Club World Cup: 1</li>
+                        </ul>
+                    </div>
+                    <div class="parrafo">
+                        <h4><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+                                class="logos">Real Madrid</h4>
+                        <ul>
+                            <li>La Liga: 1</li>
+                            <li>Copa del Rey: 1</li>
+                        </ul>
+                    </div>
+                    <div class="parrafo">
+
+                        <h3>Individual <i class="fa fa-futbol-o"></i></h3>
+                        <ul>
+                            <li>Ballon d'Or: 1</li>
+                            <li>European Golden Shoe: 0</li>
+                            <li>UEFA Champions League top scorer: 1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fila 1">
+                    <h3>Records</h3>
+                    <div class="parrafo">
+                        <h4><img src="https://openclipart.org/download/173813/earth.svg" class="logos">World
+                        </h4>
+                        <ul>
+                            <li>He won a world cup and champions league
+                            </li>
+                            <li>Won a trophy in every club that he played</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="parrafo">
+                        <h4><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+                                class="logos">Real Madrid</h4>
+                        <ul>
+                            <li>Real Madrid all-time top goalscorer</li>
+                            <li>Fastest player to reach 300 official goals</li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <img src="../imgs/kaka4.jpg" alt="Cristiano Ronaldo edit" id="ronaldo-custom-image">
+                        <em>
+                            <p>For more, go to:</p>
+                            <ul>
+
+                                <li>Kaka's <a href="https://twitter.com/KAKA">twitter</a></li>
+                            </ul>
+                        </em>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div hidden id="3">
+        <h1 class="text-center">Neymar</h1>
+
+
+        <div class="flex-container" id="container-images">
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/ney1.avif" class="img-responsive" alt="Cristiano Ronaldo at Sporting">
+            </div>
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/ney2.avif">
+            </div>
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/ney3.webp" class="img-responsive" alt="Cristiano Ronaldo at Real Madrid">
+            </div>
+        </div>
+
+        <div id="achievements">
+
+            <h2>Selected Achievements</h2>
+
+            <div class="flex-container_1">
+
+                <div class="fila 1">
+                    <div class="parrafo">
+                        <h3>Club</h3>
+                        <h4><img src="../imgs/barca.webp" class="logos">FC Barcelona United</h4>
+                        <ul>
+                            <li>La Liga: 2</li>
+                            <li>Copa del Rey: 2</li>
+                            <li>UEFA Champions League: 1</li>
+                            <li>UEFA Super Cup: 1</li>
+                            <li>FIFA Club World Cup: 1</li>
+                        </ul>
+                    </div>
+                    <div class="parrafo">
+                        <h4><img src="../imgs/psg.png" class="logos">Paris Saint Germain</h4>
+                        <ul>
+                            <li>Ligue 1: 3</li>
+                            <li>France Cup: 2</li>
+                            <li>UEFA Champions League: 0</li>
+                            <li>UEFA Super Cup: 0</li>
+                            <li>FIFA Club World Cup: 0</li>
+                        </ul>
+                    </div>
+                    <div class="parrafo">
+
+                        <h3>Individual <i class="fa fa-futbol-o"></i></h3>
+                        <ul>
+                            <li>Ballon d'Or: 0</li>
+                            <li>European Golden Shoe: 0</li>
+                            <li>UEFA Champions League top scorer: 1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fila 1">
+                    <h3>Records</h3>
+                    <div class="parrafo">
+                        <h4><img src="https://openclipart.org/download/173813/earth.svg" class="logos">World
+                        </h4>
+                        <ul>
+                            <li>Most Valuable Young Soccer Player in the World according to FIFA
+                                seasons</li>
+                            <li>Youngest player to win the footballer of the year award in South America</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="parrafo">
+                        <h4><img src="../imgs/santos.png" class="logos">Santos FC</h4>
+                        <ul>
+                            <li>Brazil all-time top goalscorer</li>
+                            <li>Most goals in a single match of the Brazilian Championship</li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <img src="../imgs/neymar4.jpg" alt="Cristiano Ronaldo edit" id="ronaldo-custom-image">
+                        <em>
+                            <p>For more, go to:</p>
+                            <ul>
+                                <li>Neymar's <a href="https://www.neymarjr.com/es">website</a>
+                                </li>
+                                <li>Neymar's <a href="https://twitter.com/neymarjr">twitter</a></li>
+                            </ul>
+                        </em>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div hidden id="4">
+        <h1 class="text-center">Mbappe</h1>
+
+
+        <div class="flex-container" id="container-images">
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/mbappe.jpg" class="img-responsive" alt="Cristiano Ronaldo at Sporting">
+            </div>
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/mbappe2.jpg" class="img-responsive" alt="Cristiano Ronaldo at Manchester United">
+            </div>
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/mbappe3.jpg" class="img-responsive" alt="Cristiano Ronaldo at Real Madrid">
+            </div>
+        </div>
+
+        <div id="achievements">
+
+            <h2>Selected Achievements</h2>
+
+            <div class="flex-container_1">
+
+                <div class="fila 1">
+                    <div class="parrafo">
+                        <h3>Club</h3>
+                        <h4><img src="../imgs/monaco.png" class="logos">AS Monaco</h4>
+                        <ul>
+                            <li>Ligue 1: 1</li>
+                            <li>Champions League: 0</li>
+                            <li>FIFA Club World Cup: 0</li>
+                        </ul>
+                    </div>
+                    <div class="parrafo">
+                        <h4><img src="../imgs/psg.png" class="logos">Paris Saint Germain</h4>
+                        <ul>
+                            <li>Ligue 1: 4</li>
+                            <li>France cup: 2</li>
+                            <li>UEFA Champions League: 0</li>
+                            <li>UEFA Super Cup: 0</li>
+                            <li>FIFA Club World Cup: 0</li>
+                        </ul>
+                    </div>
+                    <div class="parrafo">
+
+                        <h3>Individual <i class="fa fa-futbol-o"></i></h3>
+                        <ul>
+                            <li>Ballon d'Or: 0</li>
+                            <li>European Golden Shoe: 0</li>
+                            <li>World Cup top scorer: 2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fila 1">
+                    <h3>Records</h3>
+                    <div class="parrafo">
+                        <h4><img src="https://openclipart.org/download/173813/earth.svg" class="logos">World
+                        </h4>
+                        <ul>
+                            <li>Golden boy award</li>
+                            <li>French player of the year</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="parrafo">
+                        <h4><img src="../imgs/francia.png" class="logos">
+                            <h4>
+                                <ul>
+                                    <li>Globe Soccer Awards for best player in the world</li>
+                                    <li>Golden Boot for the top scorer in the Soccer World Cup (8 goals)</li>
+                                </ul>
+                    </div>
+                    <div class="center">
+                        <img src="../imgs/mbappe4.jpg" alt="Cristiano Ronaldo edit" id="ronaldo-custom-image">
+                        <em>
+                            <p>For more, go to:</p>
+                            <ul>
+                                <li>Mbappe's <a href="https://kylianmbappe.com/es/">website</a>
+                                </li>
+                                <li>Mbappe's <a href="https://twitter.com/KMbappe">twitter</a></li>
+                            </ul>
+                        </em>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div hidden id="5">
+        <h1 class="text-center">Messi</h1>
+
+
+        <div class="flex-container" id="container-images">
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/messi.jpg">
+            </div>
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/messi2.webp" class="img-responsive" alt="Cristiano Ronaldo at Manchester United">
+            </div>
+            <div class="col-xs-4 col-centered">
+                <img src="../imgs/messi3.jpg" class="img-responsive" alt="Cristiano Ronaldo at Real Madrid">
+            </div>
+        </div>
+
+        <div id="achievements">
+
+            <h2>Selected Achievements</h2>
+
+            <div class="flex-container_1">
+
+                <div class="fila 1">
+                    <div class="parrafo">
+                        <h3>Club</h3>
+                        <h4><img src="../imgs/barca.webp" class="logos">FC Barcelona</h4>
+                        <ul>
+                            <li>La Liga: 10</li>
+                            <li>Copa del Rey: 7</li>
+                            <li>UEFA Champions League: 3</li>
+                            <li>UEFA Super Cup: 2</li>
+                            <li>FIFA Club World Cup: 2</li>
+                        </ul>
+                    </div>
+                    <div class="parrafo">
+                        <h4><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+                                class="logos">Real Madrid</h4>
+                        <ul>
+                            <li>Ligue 1: 1</li>
+                            <li>France cup: 1</li>
+                            <li>UEFA Champions League: 0</li>
+                            <li>UEFA Super Cup: 0</li>
+                            <li>FIFA Club World Cup: 0</li>
+                        </ul>
+                    </div>
+                    <div class="parrafo">
+
+                        <h3>Individual <i class="fa fa-futbol-o"></i></h3>
+                        <ul>
+                            <li>Ballon d'Or: 6</li>
+                            <li>European Golden Shoe: 4</li>
+                            <li>UEFA Champions League top scorer: 4</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fila 1">
+                    <h3>Records</h3>
+                    <div class="parrafo">
+                        <h4><img src="https://openclipart.org/download/173813/earth.svg" class="logos">World
+                        </h4>
+                        <ul>
+                            <li>Second footballer to reach 40 goals in a professional league for two consecutive
+                                seasons</li>
+                            <li>He can´t score in every minute of an official football game</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="parrafo">
+                        <h4><img src="../imgs/barca.webp" class="logos">FC Barcelona</h4>
+                        <ul>
+                            <li>most official goals in the same season (club and national team): 82 goals in 69 games in
+                                2011-12</li>
+                            <li>Second player to reach 300 official goals</li>
+                        </ul>
+                    </div>
+                    <div class="center">
+                        <img src="../imgs/messi4.avif" alt="Cristiano Ronaldo edit" id="ronaldo-custom-image">
+                        <em>
+                            <p>For more, go to:</p>
+                            <ul>
+                                <li>Messi's <a href="https://messi.com/">website</a>
+                                </li>
+                                <li>Messi's <a href="https://twitter.com/Ieomessiok">twitter</a></li>
+                            </ul>
+                        </em>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--<script>ScrollReveal().reveal('.contenedor_foto',{delay: 500});</script>-->
+    </div>
+    <section>
+
+    </section>
+
+    <footer>
+        <p>Author: Nicolás Olate Orellana<br>
+            <a href="mailto:hege@example.com">nicolas.olate@uc.cl</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
