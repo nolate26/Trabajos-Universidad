@@ -1,0 +1,24 @@
+.integrante {
+    display: block;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.integrante img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.integrante h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.integrante p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}

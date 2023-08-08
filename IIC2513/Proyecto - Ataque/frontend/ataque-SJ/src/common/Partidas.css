@@ -1,0 +1,18 @@
+.Partida{
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+  }
+
+.Partida:hover{
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }

@@ -1,0 +1,35 @@
+.dice {
+  width: 100px;
+  height: 100px;
+  flex: 1;
+}
+
+.face-1 {
+  background-image: url('/assets/img/dice/dice1.png');
+  background-size: 100px 100px;
+}
+
+.face-2 {
+  background-image: url('/assets/img/dice/dice2.png');
+  background-size: 100px 100px;
+}
+
+.face-3 {
+  background-image: url('/assets/img/dice/dice3.png');
+  background-size: 100px 100px;
+}
+
+.face-4 {
+  background-image: url('/assets/img/dice/dice4.png');
+  background-size: 100px 100px;
+}
+
+.face-5 {
+  background-image: url('/assets/img/dice/dice5.png');
+  background-size: 100px 100px;
+}
+
+.face-6 {
+  background-image: url('/assets/img/dice/dice6.png');
+  background-size: 100px 100px;
+}

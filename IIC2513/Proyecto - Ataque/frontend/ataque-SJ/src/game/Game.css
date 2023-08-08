@@ -1,0 +1,95 @@
+.Game {
+    /* background-color: white; */
+    background-image: url('/assets/img/board.jpg');
+    background-size: 1000px;
+    border-radius: 20px;
+    width: 1200px;
+    height: 800px;
+    padding: 20px;
+    position: fixed;
+    left: 30px;
+    top: 30px;
+}
+
+.turn {
+    background-color: #242424;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    width: 500px;
+    text-align: center;
+    position: fixed;
+    left: 50px;
+    top: 50px;
+}
+
+.turn h1 {
+    font-size: 32px;
+}
+
+.board {
+    border-radius: 5px;
+    background-color: #242424;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+.attackPanel {
+    grid-template-areas: 'territories armies attack attack attack';
+    display: grid;
+    background-color: #242424;
+    border-width: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    position: fixed;
+    width: 1100px;
+    height: 150px;
+    left: 100px;
+    top: 700px;
+
+}
+
+.attackPanelTerritories {
+    display: flex;
+    grid-area: territories;
+    width: 100px;
+    height: 150px;
+}
+
+.attackPanelArmies {
+    display: flex;
+    grid-area: armies;
+    width: 100px;
+    height: 150px;
+}
+
+.attackPanelButton {
+    display: flex;
+    grid-area: attack;
+}
+
+.attackButton {
+    width: 100px;
+    height: 100px;
+}
+
+.attackPanelDice {
+    display: flex;
+    grid-area: attack;
+}
+
+.infoPanel {
+    background-color: #242424;
+    border-width: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+    position: fixed;
+    width: 250px;
+    height: 600px;
+    left: 1000px;
+    top: 50px;
+}

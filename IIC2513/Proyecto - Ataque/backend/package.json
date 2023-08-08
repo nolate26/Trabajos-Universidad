@@ -1,0 +1,45 @@
+{
+  "name": "OLMA",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "repository": "https://github.com/IIC2513/grupo-OLMA-backend.git",
+  "author": "Nicolás Olate <nicolas.olate@uc.cl>",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "add": "^2.0.6",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.1.3",
+    "jsonwebtoken": "^9.0.0",
+    "koa": "^2.14.2",
+    "koa-body": "^6.0.1",
+    "koa-bodyparser": "^4.4.0",
+    "koa-cors2": "^0.0.1",
+    "koa-jwt": "^4.0.4",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^12.0.0",
+    "nodemon": "^2.0.22",
+    "orm": "^7.1.0",
+    "pg": "^8.11.0",
+    "postgresql": "^0.0.1",
+    "sequelize": "^6.32.0",
+    "sequelize-cli": "^6.6.0",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "deploy": "node start.js",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:seed": "sequelize-cli db:seed:all",
+    "db:drop": "sequelize-cli db:drop",
+    "db:create": "sequelize-cli db:create",
+    "db:reset": "run-s db:drop db:create"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  }
+}

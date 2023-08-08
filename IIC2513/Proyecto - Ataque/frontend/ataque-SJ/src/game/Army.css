@@ -1,0 +1,26 @@
+.Army{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    opacity: 0.8;
+}
+.Army:hover{
+    border-color: white;
+    opacity: 1;
+}
+.Army p{
+    text-align: center;
+    color: black;
+    opacity: 1;
+}
+
+.army1{
+    position: absolute;
+    top: 290px;
+    left: 120px;
+}

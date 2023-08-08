@@ -1,0 +1,154 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #009688;
+    --secondary-color: #424242;
+    --light-color: #f5f5f5;
+    --dark-color: #333333;
+    --accent-color: #FFC107;
+}
+
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+    font-family: "Risk Font";
+    src: url('../assets/fonts/RusselSquareOpti.otf')
+  }
+
+.title{
+    font-family: "Risk Font";
+    font-size: 70px;
+    color: yellow;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+/* Sección de resumen */
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+.summary h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.summary li{
+    text-align: justify;
+}
+
+.summary-text div {
+    color: #c3d2c2;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+/* Sección de opciones */
+.options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 60px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.option:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.option h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.option p {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+/* Botón */
+.cta {
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #ff9800;
+    cursor: pointer;
+}
+
+.board {
+    margin: auto;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    width: 750px;
+    height: auto;
+    text-align: center;
+  }
+
+  .nav-list{
+    list-style-type: none;
+  }
+  .game-list{
+    list-style-type: none;
+  }
+
+  .board{
+    min-width: 300px;
+    width: 80%;
+  }
